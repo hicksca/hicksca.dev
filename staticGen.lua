@@ -46,9 +46,9 @@ end
 
 -- Generate HTML
 local function generate_html(title, contact_info, description)
-    local template = read_file("template.html")
+    local template = read_file("templates/template.html")
     if not template then
-        print("Error: template.html not found")
+        print("Error: templates/template.html not found")
         return nil
     end
     
